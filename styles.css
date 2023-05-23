@@ -12,6 +12,18 @@
   font-family: 'DM Serif Display', serif;
 }
 
+.container >* {
+  border-radius: 1rem;
+}
+
+#img {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  text-align: center;
+}
+
 nav{
   background-color: white;
   grid-area: nav;
