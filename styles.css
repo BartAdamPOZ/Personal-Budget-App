@@ -10,6 +10,7 @@
   "footer footer";
   grid-gap: 1rem;
   font-family: 'DM Serif Display', serif;
+  padding-bottom: 1rem;
 }
 
 .container >* {
@@ -85,6 +86,7 @@ footer {
     "features"
     "footer";
     justify-content: center;
+    padding-bottom: 1rem;
   }
 
   #sign-up {
@@ -95,6 +97,10 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
+  .container {
+    padding-bottom: 1rem;
+  }
+  
   #img-wave {
     width: 240px;
     height: 108px;
