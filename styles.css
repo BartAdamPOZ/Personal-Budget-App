@@ -9,29 +9,36 @@
   "features sign-up"
   "footer footer";
   grid-gap: 1rem;
+  font-family: 'DM Serif Display', serif;
 }
+
 nav{
-  background-color: aqua;
+  background-color: white;
   grid-area: nav;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 0;
+  padding-top: 10px;
 }
 
 #img {
-  background-color: rgb(212, 212, 169);
+  background-color: #F3F5F7;
   grid-area: img;
 }
 
 #sign-up {
-  background-color: aquamarine;
+  background-color: #F3F5F7;
   grid-area: sign-up;
 }
 
 #features {
-  background-color: aquamarine;
+  background-color: #F3F5F7;
   grid-area: features;
 }
 
 footer {
-  background-color: bisque;
+  background-color: #F3F5F7;
   grid-area: footer;
 }
 
@@ -45,5 +52,6 @@ footer {
     "sign-up"
     "features"
     "footer";
+    justify-content: center;
   }
 }
