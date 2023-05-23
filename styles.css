@@ -1,0 +1,49 @@
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.25fr 2fr 0.75fr 0.4fr;
+  grid-template-areas: 
+  "nav nav"
+  "img sign-up"
+  "features sign-up"
+  "footer footer";
+  grid-gap: 1rem;
+}
+nav{
+  background-color: aqua;
+  grid-area: nav;
+}
+
+#img {
+  background-color: rgb(212, 212, 169);
+  grid-area: img;
+}
+
+#sign-up {
+  background-color: aquamarine;
+  grid-area: sign-up;
+}
+
+#features {
+  background-color: aquamarine;
+  grid-area: features;
+}
+
+footer {
+  background-color: bisque;
+  grid-area: footer;
+}
+
+@media only screen and (max-width:1024px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.15fr 0.5fr 1fr 0.4fr 0.2fr;
+    grid-template-areas: 
+    "nav"
+    "img"
+    "sign-up"
+    "features"
+    "footer";
+  }
+}
