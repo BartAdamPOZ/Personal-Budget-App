@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en"></html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,13 +24,13 @@
         <header class="container-fluid d-flex flex-wrap align-items-center justify-content-md-between justify-content-center py-2 ">
           <div class=" "">
             <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
-              <img src="./images/Logo_small-transparent.png" class="bi" width="40" height="32" role="img" aria-label="Personal-Budget-logo"><use xlink:href="index.html"></use> </img>
+              <img src="./images/Logo_small-transparent.png" class="bi" width="40" height="32" role="img" aria-label="Personal-Budget-logo"><use xlink:href="./index.html"></use> </img>
               <p class="mx-2 my-1">Personal Budget</p>
             </a>
           </div>
           <div class="text-end">
-            <button type="button" class="btn btn-outline-dark me-2">Login</button>
-            <button type="button" class="btn btn-dark">Sign-up</button>
+            <button href="./index.html" type="button" class="btn btn-outline-dark me-2">Login</button>
+            <button href="./sign-up.html" type="button" class="btn btn-dark">Sign-up</button>
           </div>
         </header>
     </nav>
@@ -43,7 +44,7 @@
       <p style="font-size: 16px; font-family: serif;">Already have an account? <a href="./index.html" class="link-secondary link-underline-dark">Sign in here </a></p>
       
       <div class="form-floating mt-3">
-        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+        <input type="email" class="form-control" id="floatingInput-name" placeholder="name@example.com">
         <label for="floatingInput">Name</label>
       </div>
       <div class="form-floating mt-3">
@@ -51,7 +52,7 @@
         <label for="floatingInput">Email</label>
       </div>
       <div class="form-floating mt-3">
-        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+        <input type="password" class="form-control" id="floatingPassword-confirmation" placeholder="Password">
         <label for="floatingPassword">Password</label>
       </div>
       <div class="form-floating mt-3">
