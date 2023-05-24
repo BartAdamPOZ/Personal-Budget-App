@@ -5,12 +5,13 @@
   grid-template-rows: 0.25fr 2fr 0.75fr 0.4fr;
   grid-template-areas: 
   "nav nav"
-  "img sign-up"
-  "features sign-up"
+  "img sign-in-up"
+  "features sign-in-up"
   "footer footer";
   grid-gap: 1rem;
   font-family: 'DM Serif Display', serif;
   padding-bottom: 1rem;
+  min-height: 800px;
 }
 
 .container >* {
@@ -37,15 +38,16 @@ nav{
   padding-top: 10px;
 }
 
-#sign-up {
+#sign-in-up {
   background-color: #F3F5F7;
-  grid-area: sign-up;
+  grid-area: sign-in-up;
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: stretch;
   justify-content: center;
   text-align: left;
   padding-left: 5rem;
+  padding-right: 5rem;;
 
 }
 
@@ -82,16 +84,20 @@ footer {
     grid-template-areas: 
     "nav"
     "img"
-    "sign-up"
+    "sign-in-up"
     "features"
     "footer";
     justify-content: center;
     padding-bottom: 1rem;
   }
 
-  #sign-up {
+  #sign-in-up {
     padding: 10%;
-    align-items: center;
+    align-items:stretch;
+  }
+
+  footer {
+    margin-bottom: 1rem;
   }
 
 }
@@ -106,6 +112,11 @@ footer {
     height: 108px;
   }
 
+  #img-nest {
+    width: 240px;
+    height: 108px;
+  }
+
   .feature-col {
     padding-top: 5px;
   }
@@ -114,7 +125,7 @@ footer {
     padding: 5px;
   }
   
-  #sign-up {
-    align-items: center;
+  #sign-in-up {
+    align-items: stretch;
   }
 }
