@@ -26,7 +26,8 @@
   grid-gap: 1rem;
   font-family: 'DM Serif Display', serif;
   padding-bottom: 1rem;
-  min-height: 500px;
+  min-height: 600px;
+  flex-direction: ;
 }
 
 .container >* {
@@ -98,18 +99,27 @@ footer {
   grid-area: pers-data;
   background-color: #F3F5F7;
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  text-align: center;
-}
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 10px;
+  }
+
 
 #edit-default-settings {
   grid-area: def-sett;
   background-color: #F3F5F7;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   text-align: center;
+  flex-direction: column;
+  padding-top: 10px;
+}
+
+.input-group {
+  max-width: 350px;
+  padding: 10px;
 }
 
 @media only screen and (max-width:1024px) {
