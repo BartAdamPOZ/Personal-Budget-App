@@ -14,6 +14,21 @@
   min-height: 800px;
 }
 
+.con-settings {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.25fr 2fr 0.1fr;
+  grid-template-areas: 
+  "nav nav"
+  "pers-data def-sett"
+  "footer footer";
+  grid-gap: 1rem;
+  font-family: 'DM Serif Display', serif;
+  padding-bottom: 1rem;
+  min-height: 500px;
+}
+
 .container >* {
   border-radius: 1rem;
 }
@@ -52,8 +67,8 @@ nav{
 }
 
 #features {
-  background-color: #F3F5F7;
   grid-area: features;
+  background-color: #F3F5F7;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -77,10 +92,25 @@ nav{
 footer {
   background-color: #F3F5F7;
   grid-area: footer;
-  border-radius: 10px;
 }
 
+#edit-personal-data {
+  grid-area: pers-data;
+  background-color: #F3F5F7;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
 
+#edit-default-settings {
+  grid-area: def-sett;
+  background-color: #F3F5F7;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
 
 @media only screen and (max-width:1024px) {
   .container {
@@ -91,6 +121,18 @@ footer {
     "img"
     "sign-in-up"
     "features"
+    "footer";
+    justify-content: center;
+    padding-bottom: 1rem;
+  }
+
+  .con-settings {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.15fr 2fr 2fr 0.15fr;
+    grid-template-areas: 
+    "nav"
+    "pers-data"
+    "def-sett"
     "footer";
     justify-content: center;
     padding-bottom: 1rem;
