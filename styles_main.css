@@ -16,6 +16,10 @@
   
 }
 
+.container >* {
+  border-radius: 1rem;
+}
+
 nav{
   background-color: white;
   grid-area: nav;
