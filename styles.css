@@ -27,7 +27,6 @@
   font-family: 'DM Serif Display', serif;
   padding-bottom: 1rem;
   min-height: 600px;
-  flex-direction: ;
 }
 
 .container >* {
@@ -100,9 +99,9 @@ footer {
   background-color: #F3F5F7;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   flex-direction: column;
-  padding-top: 10px;
+  padding-top: 1rem;
   }
 
 
@@ -114,13 +113,16 @@ footer {
   align-items: center;
   text-align: center;
   flex-direction: column;
-  padding-top: 10px;
+  padding-top: 1rem;
 }
 
 .input-group {
-  max-width: 350px;
-  padding: 10px;
+  min-width: 350px;
+  padding: 0.5rem;
+  display: flex;
 }
+
+
 
 @media only screen and (max-width:1024px) {
   .container {
@@ -160,11 +162,17 @@ footer {
   #features {
     padding-top: 1rem;
   }
+
 }
 
 @media only screen and (max-width: 768px) {
   .container {
     padding-bottom: 1rem;
+    scale: 0.8;
+  }
+
+  nav {
+    margin-top: -60px;
   }
   
   #img-wave {
@@ -188,4 +196,10 @@ footer {
   #sign-in-up {
     align-items: stretch;
   }
+
+  .input-group {
+    max-width: 200px;
+    padding: 0.5rem;
+  }
+
 }
