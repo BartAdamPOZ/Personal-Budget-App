@@ -109,7 +109,7 @@ footer {
   grid-area: def-sett;
   background-color: #F3F5F7;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   text-align: center;
   flex-direction: column;
