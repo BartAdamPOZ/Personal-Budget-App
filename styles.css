@@ -29,6 +29,21 @@
   min-height: 600px;
 }
 
+.con-add-income {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.25fr 2fr 0.2fr;
+  grid-template-areas: 
+  "nav"
+  "income-main"
+  "footer";
+  grid-gap: 1rem;
+  font-family: 'DM Serif Display', serif;
+  padding-bottom: 1rem;
+  min-height: 600px;
+}
+
 .container >* {
   border-radius: 1rem;
 }
@@ -117,9 +132,19 @@ footer {
 }
 
 .input-group {
-  min-width: 350px;
+  min-width: 330px;
   padding: 0.5rem;
   display: flex;
+}
+
+#add-income-main-content {
+  background-color: #F3F5F7;
+  display: flex;
+  grid-area: income-main;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
 }
 
 .active-button {
@@ -154,6 +179,16 @@ footer {
     padding-bottom: 1rem;
   }
 
+  .con-add-income {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.15fr 2fr 0.15fr;
+    grid-template-areas: 
+    "nav"
+    "income-main"
+    "footer";
+    padding-bottom: 1rem;
+  }
+
   #sign-in-up {
     padding: 10%;
     align-items:stretch;
@@ -172,7 +207,12 @@ footer {
 @media only screen and (max-width: 768px) {
   .container {
     padding-bottom: 1rem;
-    scale: 0.8;
+    scale: 0.75;
+    min-width: 300px;
+  }
+
+  #add-income-main-content {
+    padding-bottom: 20px;
   }
 
   nav {
@@ -203,7 +243,7 @@ footer {
 
   .input-group {
     max-width: 200px;
-    padding: 0.5rem;
+    padding: 1rem;
   }
 
 }

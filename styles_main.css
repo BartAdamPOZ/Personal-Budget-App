@@ -12,7 +12,7 @@
   font-family: 'DM Serif Display', serif;
   padding-bottom: 1rem;
   min-height: 200px;
-  align-items: center;
+  
   
 }
 
@@ -179,11 +179,9 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    scale: 0.8;
   }
   
-  .scaled{
-    transform: scale(0.7);
-  }
 
   .card:hover {
     transform: translateY(-5px) scale(1.05) translateZ(0);

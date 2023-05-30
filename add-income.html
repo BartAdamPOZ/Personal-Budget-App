@@ -17,7 +17,7 @@
   <link rel="icon" href="./images/Logo_small-transparent.png">
 </head>
 <body>
-  <div class="container">
+  <div class="container con-add-income">
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <a class="navbar-brand d-inline-flex align-items-center py-2" href="./main.html"><img src="./images/Logo_small-transparent.png" class="bi" width="40" height="32" role="img" aria-label="Personal-Budget-logo"><use xlink:href="main.html"></use></img> <p class="mx-2 my-1">Personal Budget</p> </a>
@@ -53,7 +53,55 @@
       </div>
     </nav>
 
-
+    <div id="add-income-main-content" class="container-fluid">
+      <div class="row py-4">
+        <h3> Incomes</h3>
+      </div> 
+      <div class="col">
+        <div class="input-group">
+          <div class="form-floating ">
+            <input type="text" class="form-control" id="floatingAmount" placeholder="Amount">
+            <label for="floatingAmount">Amount</label>
+          </div>
+          <span class="input-group-text">PLN</span>
+        </div>
+      <div class="col">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+          <label class="form-check-label" for="flexRadioDefault1">
+            Salary
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+          <label class="form-check-label" for="flexRadioDefault2">
+            Bank interest
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+          <label class="form-check-label" for="flexRadioDefault3">
+            Sales on allegro
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4" checked>
+          <label class="form-check-label" for="flexRadioDefault4">
+            Other
+          </label>
+        </div>
+      </div>
+      <div class="col">
+        <div class="input-group">
+          <span class="input-group-text">Comment</span>
+          <textarea class="form-control" aria-label="With textarea"></textarea>
+        </div>
+      </div>
+      <div class="col" style="text-align: center;">
+        <button type="button" class="btn btn-dark">Add income</button>
+      </div>
+      </div>
+    </div>
 
     <footer>
       <div class="card-footer text-body-secondary justify-content-center d-flex align-items-center py-5 ">
