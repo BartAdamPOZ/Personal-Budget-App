@@ -39,6 +39,11 @@ footer {
   background-color: #F3F5F7;
   grid-area: footer;
 }
+
+.active-button {
+  background-color: #F3F5F7;
+  border-radius: 1rem;
+}
  
 
 .expense{

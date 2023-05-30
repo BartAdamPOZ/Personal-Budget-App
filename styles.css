@@ -122,6 +122,10 @@ footer {
   display: flex;
 }
 
+.active-button {
+  background-color: #F3F5F7;
+  border-radius: 1rem;
+}
 
 
 @media only screen and (max-width:1024px) {
