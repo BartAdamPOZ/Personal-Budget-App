@@ -144,12 +144,16 @@ footer {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  text-align: center;
+  padding-bottom: 1rem;
 }
 
 .active-button {
   background-color: #F3F5F7;
   border-radius: 1rem;
+}
+
+.form-check {
+  padding-left: 5rem;
 }
 
 
@@ -202,6 +206,10 @@ footer {
     padding-top: 1rem;
   }
 
+  .form-check {
+    padding-left: 5rem;
+  }
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -213,6 +221,10 @@ footer {
 
   #add-income-main-content {
     padding-bottom: 20px;
+  }
+
+  .form-check {
+    padding-left: 5rem;
   }
 
   nav {
