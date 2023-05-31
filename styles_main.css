@@ -30,11 +30,6 @@ nav{
   padding-top: 10px;
 }
 
-.white1 {
-  background-color: red;
-  grid-area: white1;
-}
-
 footer {
   background-color: #F3F5F7;
   grid-area: footer;
@@ -45,7 +40,6 @@ footer {
   border-radius: 1rem;
 }
  
-
 .expense{
   --bg-color: #ffd861;
   --bg-color-light: #ffeeba;
@@ -67,11 +61,6 @@ footer {
   --box-shadow-color: rgba(206, 178, 252, 0.48);
 }
 
-.card-col {
-  display: flex;
-  justify-content: center;
-
-}
 
 .card {
   width: 220px;
@@ -171,15 +160,16 @@ footer {
 } 
 
 main{
+  display: flex;
   align-items: center;
+  justify-content: center;
 }
 
  @media only screen and (max-width: 768px) {
   .container-fluid {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     scale: 0.8;
+    justify-content: center;
+    align-items:center;
   }
   
 
@@ -210,6 +200,11 @@ main{
     transition: all 0.3s ease-out;
     text-decoration: none;
   
+  }
+  main {
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
   }
 
 } 
