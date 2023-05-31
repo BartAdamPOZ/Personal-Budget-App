@@ -44,6 +44,21 @@
   min-height: 600px;
 }
 
+.con-add-expense {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.25fr 2fr 0.2fr;
+  grid-template-areas: 
+  "nav"
+  "expense-main"
+  "footer";
+  grid-gap: 1rem;
+  font-family: 'DM Serif Display', serif;
+  padding-bottom: 1rem;
+  min-height: 600px;
+}
+
 .container >* {
   border-radius: 1rem;
 }
@@ -147,6 +162,16 @@ footer {
   padding-bottom: 1rem;
 }
 
+#add-expense-main-content {
+  background-color: #F3F5F7;
+  display: flex;
+  grid-area: expense-main;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 1rem;
+}
+
 .active-button {
   background-color: #F3F5F7;
   border-radius: 1rem;
@@ -193,6 +218,16 @@ footer {
     padding-bottom: 1rem;
   }
 
+  .con-add-expense {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.15fr 2fr 0.15fr;
+    grid-template-areas: 
+    "nav"
+    "expense-main"
+    "footer";
+    padding-bottom: 1rem;
+  }
+
   #sign-in-up {
     padding: 10%;
     align-items:stretch;
@@ -220,6 +255,10 @@ footer {
   }
 
   #add-income-main-content {
+    padding-bottom: 20px;
+  }
+
+  .add-expense-main-content {
     padding-bottom: 20px;
   }
 
