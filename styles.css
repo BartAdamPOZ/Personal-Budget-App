@@ -113,16 +113,32 @@
   font-size: 12px;
 }
 
+.table-main {
+  width: 100%;
+  max-width: 480px;
+  max-height: 300px;
+  display: inline-block;
+  padding-left: 1rem;
+  overflow-x: auto;
+  border-spacing: 0;
+}
+
 #comparison-inc {
   display: flex;
-  background-color: #C7F2A4;
+  background-color: #F3F5F7;
   grid-area: comparison-inc;
+  font-size: 12px;
+  padding-top: 1rem;
+  justify-content: center;
 }
 
 #comparison-exp {
   display: flex;
-  background-color: #FFF3E2;
+  background-color: #F3F5F7;
   grid-area: comparison-exp;
+  font-size: 12px;
+  padding-top: 1rem;
+  justify-content: center;
 }
 
 #balance {
