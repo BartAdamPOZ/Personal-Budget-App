@@ -98,7 +98,8 @@
   flex-direction: column;
   text-align: center;
   padding-top: 1rem;
-  text-overflow: ellipsis;
+  justify-content: space-evenly;
+  font-size: 12px;
 }
 
 #exp-top3 {
@@ -108,18 +109,19 @@
   align-items: center;
   flex-direction: column;
   text-align: center;
-  padding-top: 1rem;
+  justify-content: space-evenly;
+  font-size: 12px;
 }
 
 #comparison-inc {
   display: flex;
-  background-color: #F3F5F7;
+  background-color: #C7F2A4;
   grid-area: comparison-inc;
 }
 
 #comparison-exp {
   display: flex;
-  background-color: #F3F5F7;
+  background-color: #FFF3E2;
   grid-area: comparison-exp;
 }
 
