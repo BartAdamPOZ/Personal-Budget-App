@@ -2,7 +2,7 @@
   display: grid;
   height: 100vh;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.25fr 2fr 0.75fr 0.4fr;
+  grid-template-rows: 0.25fr 2fr 0.75fr 0.2fr;
   grid-template-areas: 
   "nav nav"
   "img sign-in-up"
@@ -18,7 +18,7 @@
   display: grid;
   height: 100vh;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.25fr 2fr 0.1fr;
+  grid-template-rows: 0.25fr 2fr 0.2fr;
   grid-template-areas: 
   "nav nav"
   "pers-data def-sett"
@@ -59,9 +59,57 @@
   min-height: 600px;
 }
 
+.con-review {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 0.6fr 1fr 1fr;
+  grid-template-rows: 0.25fr 1fr 0.5fr 0.5fr 0.2fr;
+  grid-template-areas: 
+  "nav nav nav"
+  "inc-top3 comparison-inc comparison-exp"
+  "exp-top3 comparison-inc comparison-exp"
+  "exp-top3 balance balance"
+  "footer footer footer"
+  ;
+  grid-gap: 1rem;
+  font-family: 'DM Serif Display', serif;
+  padding-bottom: 1rem;
+}
+
 .container >* {
   border-radius: 1rem;
 }
+
+#inc-top3 {
+  display: flex;
+  background-color: #F3F5F7;
+  grid-area: inc-top3;
+}
+
+#exp-top3 {
+  display: flex;
+  background-color: #F3F5F7;
+  grid-area: exp-top3;
+}
+
+#comparison-inc {
+  display: flex;
+  background-color: #F3F5F7;
+  grid-area: comparison-inc;
+}
+
+#comparison-exp {
+  display: flex;
+  background-color: #F3F5F7;
+  grid-area: comparison-exp;
+}
+
+#balance {
+  display: flex;
+  background-color: #F3F5F7;
+  grid-area: balance;
+}
+
 
 #img {
   display:flex;
@@ -150,6 +198,7 @@ footer {
   min-width: 330px;
   padding: 0.5rem;
   display: flex;
+  justify-content: center;
 }
 
 #add-income-main-content {
