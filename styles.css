@@ -62,10 +62,11 @@
 .con-review {
   display: grid;
   height: 100vh;
-  grid-template-columns: 0.6fr 1fr 1fr;
-  grid-template-rows: 0.25fr 1fr 0.5fr 0.5fr 0.2fr;
+  grid-template-columns: 0.7fr 1fr 1fr;
+  grid-template-rows: 0.25fr 0.25fr 1fr 0.5fr 0.5fr 0.2fr;
   grid-template-areas: 
   "nav nav nav"
+  "select-period select-period select-period"
   "inc-top3 comparison-inc comparison-exp"
   "exp-top3 comparison-inc comparison-exp"
   "exp-top3 balance balance"
@@ -80,16 +81,34 @@
   border-radius: 1rem;
 }
 
-#inc-top3 {
+#select-period {
+  grid-area: select-period;
   display: flex;
   background-color: #F3F5F7;
+  align-items: center;
+  padding-right: 1rem;
+  justify-content: center;
+}
+
+#inc-top3 {
+  display: flex;
+  background-color: #C7F2A4;
   grid-area: inc-top3;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 1rem;
+  text-overflow: ellipsis;
 }
 
 #exp-top3 {
   display: flex;
-  background-color: #F3F5F7;
+  background-color: #FFF3E2;
   grid-area: exp-top3;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 1rem;
 }
 
 #comparison-inc {
