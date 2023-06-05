@@ -2,7 +2,7 @@
   display: grid;
   height: 100vh;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.25fr 2fr 0.75fr 0.4fr;
+  grid-template-rows: 0.25fr 2fr 0.75fr 0.2fr;
   grid-template-areas: 
   "nav nav"
   "img sign-in-up"
@@ -18,7 +18,7 @@
   display: grid;
   height: 100vh;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.25fr 2fr 0.1fr;
+  grid-template-rows: 0.25fr 2fr 0.2fr;
   grid-template-areas: 
   "nav nav"
   "pers-data def-sett"
@@ -59,9 +59,97 @@
   min-height: 600px;
 }
 
+.con-review {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 0.7fr 1fr 1fr;
+  grid-template-rows: 0.25fr 0.25fr 1fr 0.5fr 0.5fr 0.2fr;
+  grid-template-areas: 
+  "nav nav nav"
+  "select-period select-period select-period"
+  "inc-top3 comparison-inc comparison-exp"
+  "exp-top3 comparison-inc comparison-exp"
+  "exp-top3 balance balance"
+  "footer footer footer"
+  ;
+  grid-gap: 1rem;
+  font-family: 'DM Serif Display', serif;
+  padding-bottom: 1rem;
+}
+
 .container >* {
   border-radius: 1rem;
 }
+
+#select-period {
+  grid-area: select-period;
+  display: flex;
+  background-color: #F3F5F7;
+  align-items: center;
+  padding-right: 1rem;
+  justify-content: center;
+}
+
+#inc-top3 {
+  display: flex;
+  background-color: #C7F2A4;
+  grid-area: inc-top3;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 1rem;
+  justify-content: space-evenly;
+  font-size: 12px;
+}
+
+#exp-top3 {
+  display: flex;
+  background-color: #FFF3E2;
+  grid-area: exp-top3;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-evenly;
+  font-size: 12px;
+}
+
+.table-main {
+  width: 100%;
+  height: 100%;
+  max-width: 440px;
+  max-height: 350px;
+  min-height: 200px;
+  display: inline-block;
+  padding-left: 0;
+  overflow-x: auto;
+  border-spacing: 10px;
+}
+
+#comparison-inc {
+  display: flex;
+  background-color: #F3F5F7;
+  grid-area: comparison-inc;
+  font-size: 12px;
+  padding-top: 1rem;
+  justify-content: center;
+  min-height: 500px;
+}
+
+#comparison-exp {
+  display: flex;
+  background-color: #F3F5F7;
+  grid-area: comparison-exp;
+  font-size: 12px;
+  padding-top: 1rem;
+  justify-content: center;
+}
+
+#balance {
+  display: flex;
+  background-color: #F3F5F7;
+  grid-area: balance;
+}
+
 
 #img {
   display:flex;
@@ -119,6 +207,13 @@ nav{
   align-items: center;
 }
 
+.sum {
+  display: flex;
+  font-size: 20px;
+  text-align: center;
+  flex-direction:column-reverse;
+}
+
 footer {
   background-color: #F3F5F7;
   grid-area: footer;
@@ -150,6 +245,7 @@ footer {
   min-width: 330px;
   padding: 0.5rem;
   display: flex;
+  justify-content: center;
 }
 
 #add-income-main-content {
@@ -170,6 +266,14 @@ footer {
   align-items: center;
   flex-direction: column;
   padding-bottom: 1rem;
+}
+
+#balance {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #C7F2A4;
 }
 
 .active-button {

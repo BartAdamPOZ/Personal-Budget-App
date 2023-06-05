@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Budget</title>
+  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300&family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+
+      <!-- web font -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" rel="stylesheet">
+  
+    <link rel="stylesheet" href="styles.css">
+  
+    <link rel="icon" href="./images/Logo_small-transparent.png">
+  </head>
+<body>
+  <div class="container con-review">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand d-inline-flex align-items-center py-2" href="./main.html"><img src="./images/Logo_small-transparent.png" class="bi" width="40" height="32" role="img" aria-label="Personal-Budget-logo"><use xlink:href="main.html"></use></img> <p class="mx-2 my-1">Personal Budget</p> </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown" style="justify-content: end;">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./main.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Add
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./add-income.html">Income</a></li>
+                <li><a class="dropdown-item" href="./add-expense.html">Expense</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active-button active" href="./review-balance.html">Review Balance</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./settings.html">Settings</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Log out</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div id="select-period" class="container-fluid">
+      <p class="d-flex my-auto text-body-secondary" style="margin-right: auto;">Selected period :</p>
+      <p class="d-flex my-auto" style="margin-right: auto;">This Month</p>
+      
+
+      <div class="btn-group dropstart d-flex">
+        <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          Select period
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">This Month</a></li>
+          <li><a class="dropdown-item" href="#">Previous Month</a></li>
+          <li><a class="dropdown-item" href="#">This Year</a></li>
+          <li><a class="dropdown-item" href="#">Custom</a></li>
+          
+        </ul>
+      </div>
+    </div>
+
+    <div id="inc-top3" class="container-fluid">
+      <caption>Top 3 Incomes</caption>
+        <table class="table text-body-secondary text-truncate">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Category </th>
+              <th scope="col">Amount (PLN)</th>
+              
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="background-color: #379237;">
+              <th scope="row">1</th>
+              <td>Salary</td>
+              <td>6505.85</td>
+            </tr>
+            <tr style="background-color: #54B435;">
+              <th scope="row">2</th>
+              <td>Sales on allegro</td>
+              <td>1258.80</td>
+            </tr>
+            <tr style="background-color: #82CD47;">
+              <th scope="row">3</th>
+              <td>Other</td>
+              <td>500.00</td>
+            </tr>
+          </tbody>
+        </table>
+      
+
+    </div>
+
+    <div id="exp-top3" class="container-fluid">
+      <caption>Top 3 Expenses</caption>
+        <table class="table text-body-secondary text-truncate">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Category </th>
+              <th scope="col">Amount (PLN)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="background-color: #E74646;">
+              <th scope="row">1</th>
+              <td>Housing</td>
+              <td>1754.50</td>
+            </tr>
+            <tr style="background-color: #FA9884;">
+              <th scope="row">2</th>
+              <td>Food</td>
+              <td>1359.28</td>
+            </tr>
+            <tr style="background-color: #FFE5CA;">
+              <th scope="row">3</th>
+              <td>Savings</td>
+              <td>855.80</td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+
+    <div id="comparison-inc" class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12" style="text-align: center;">
+          <h5>Incomes</h5>
+        </div>
+        <div class="col-lg-12"> 
+          <table class="table table-main">
+            <thead>
+              <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Category</th>
+                <th scope="col">Date</th>
+                <th scope="col">Amount[PLN]</th>
+                <th scope="col">Edit</th>
+                <th scope="col">Delete</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Salary June</td>
+                <td>Salary</td>
+                <td>2023-06-04</td>
+                <td>6505.85</td>
+                <td>
+                  <button type="button" class="btn btn-dark btn-sm" >
+                    <i class="bi bi-pencil"></i>
+                </button></td>
+                <td>
+                  <button type="button" class="btn btn-dark btn-sm" >
+                    <i class="bi bi-x"></i>
+                </button></td>
+              </tr>
+              <tr>
+                <td>Blouse black</td>
+                <td>Sales on Allegro</td>
+                <td>2023-06-04</td>
+                <td>199.90</td>
+                <td>
+                  <button type="button" class="btn btn-dark btn-sm">
+                    <i class="bi bi-pencil"></i>
+                </button></td>
+                <td>
+                  <button type="button" class="btn btn-dark btn-sm" >
+                    <i class="bi bi-x"></i>
+                </button></td>
+                
+              </tr>
+              <tr>
+                <td>Lee Jeans</td>
+                <td>Sales on Allegro</td>
+                <td>2023-06-04</td>
+                <td>259.90</td>
+                <td>
+                  <button type="button" class="btn btn-dark btn-sm" >
+                    <i class="bi bi-pencil"></i>
+                </button></td>
+                <td>
+                  <button type="button" class="btn btn-dark btn-sm" >
+                    <i class="bi bi-x"></i>
+                </button></td>
+              </tr>
+              <tr>
+                <td>Guitar</td>
+                <td>Sales on Allegro</td>
+                <td>2023-06-02</td>
+                <td>799.00</td>
+                <td>
+                  <button type="button" class="btn btn-dark btn-sm" >
+                    <i class="bi bi-pencil"></i>
+                </button></td>
+                <td>
+                  <button type="button" class="btn btn-dark btn-sm" >
+                    <i class="bi bi-x"></i>
+                </button></td>
+              </tr>
+              <tr>
+                <td>500+</td>
+                <td>Other</td>
+                <td>2023-06-01</td>
+                <td>500.00</td>
+                <td>
+                  <button type="button" class="btn btn-dark btn-sm" >
+                    <i class="bi bi-pencil"></i>
+                </button></td>
+                <td>
+                  <button type="button" class="btn btn-dark btn-sm" >
+                    <i class="bi bi-x"></i>
+                </button></td>
+              </tr>
+              <tr>
+                <td>Bank</td>
+                <td>Bank interest</td>
+                <td>2023-06-01</td>
+                <td>85.44</td>
+                <td>
+                  <button type="button" class="btn btn-dark btn-sm" >
+                    <i class="bi bi-pencil"></i>
+                </button></td>
+                <td>
+                  <button type="button" class="btn btn-dark btn-sm" >
+                    <i class="bi bi-x"></i>
+                </button></td>
+              </tr>
+              <tr>
+                <td>Bank</td>
+                <td>Bank interest</td>
+                <td>2023-06-01</td>
+                <td>85.44</td>
+                <td>
+                  <button type="button" class="btn btn-dark btn-sm" >
+                    <i class="bi bi-pencil"></i>
+                </button></td>
+                <td>
+                  <button type="button" class="btn btn-dark btn-sm" >
+                    <i class="bi bi-x"></i>
+                </button></td>
+              </tr>
+              <tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-lg-12 sum">
+          <p>You earnt: 8435.53 [PLN] this month! </p>
+        </div>
+      </div>
+
+    </div>
+
+    <div id="comparison-exp" class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12" style="text-align: center;">
+          <h5>Expenses</h5>
+        </div>
+        <div class="col-lg-12"> 
+          <table class="table table-main">
+            <thead>
+              <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Category</th>
+                <th scope="col">Date</th>
+                <th scope="col">Amount[PLN]</th>
+                <th scope="col">Edit</th>
+                <th scope="col">Delete</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>ON</td>
+                <td>Transportation</td>
+                <td>2023-06-04</td>
+                <td>280.65</td>
+                <td>
+                  <button type="button" class="btn btn-dark btn-sm" >
+                    <i class="bi bi-pencil"></i>
+                </button></td>
+                <td>
+                  <button type="button" class="btn btn-dark btn-sm" >
+                    <i class="bi bi-x"></i>
+                </button></td>
+              </tr>
+              <tr>
+                <td>Medicines</td>
+                <td>Healthcare</td>
+                <td>2023-06-04</td>
+                <td>111.80</td>
+                <td>
+                  <button type="button" class="btn btn-dark btn-sm">
+                    <i class="bi bi-pencil"></i>
+                </button></td>
+                <td>
+                  <button type="button" class="btn btn-dark btn-sm" >
+                    <i class="bi bi-x"></i>
+                </button></td>
+                
+              </tr>
+              <tr>
+                <td>Grocery</td>
+                <td>Food</td>
+                <td>2023-06-03</td>
+                <td>187.52</td>
+                <td>
+                  <button type="button" class="btn btn-dark btn-sm" >
+                    <i class="bi bi-pencil"></i>
+                </button></td>
+                <td>
+                  <button type="button" class="btn btn-dark btn-sm" >
+                    <i class="bi bi-x"></i>
+                </button></td>
+              </tr>
+              <tr>
+                <td>Toys</td>
+                <td>Children</td>
+                <td>2023-06-02</td>
+                <td>99.90</td>
+                <td>
+                  <button type="button" class="btn btn-dark btn-sm" >
+                    <i class="bi bi-pencil"></i>
+                </button></td>
+                <td>
+                  <button type="button" class="btn btn-dark btn-sm" >
+                    <i class="bi bi-x"></i>
+                </button></td>
+              </tr>
+              <tr>
+                <td>Cinema 3D</td>
+                <td>Entertainment</td>
+                <td>2023-06-01</td>
+                <td>64.39</td>
+                <td>
+                  <button type="button" class="btn btn-dark btn-sm" >
+                    <i class="bi bi-pencil"></i>
+                </button></td>
+                <td>
+                  <button type="button" class="btn btn-dark btn-sm" >
+                    <i class="bi bi-x"></i>
+                </button></td>
+              </tr>
+              <tr>
+                <td>Workout</td>
+                <td>Training</td>
+                <td>2023-06-01</td>
+                <td>35.00</td>
+                <td>
+                  <button type="button" class="btn btn-dark btn-sm" >
+                    <i class="bi bi-pencil"></i>
+                </button></td>
+                <td>
+                  <button type="button" class="btn btn-dark btn-sm" >
+                    <i class="bi bi-x"></i>
+                </button></td>
+              </tr>
+              <tr>
+                <td>Thunderbird</td>
+                <td>Donation</td>
+                <td>2023-06-01</td>
+                <td>50.00</td>
+                <td>
+                  <button type="button" class="btn btn-dark btn-sm" >
+                    <i class="bi bi-pencil"></i>
+                </button></td>
+                <td>
+                  <button type="button" class="btn btn-dark btn-sm" >
+                    <i class="bi bi-x"></i>
+                </button></td>
+              </tr>
+              <tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-lg-12 sum">
+          <p>You spent: 829.26 [PLN] this month! </p>
+        </div>
+      </div>
+    </div>
+    
+    <div id="balance" class="container-fluid">
+        <h5>Your balance:</h5>
+        <h4>7606.27 [PLN]</h4>
+        <h5>Great job! Keep going!</h5>
+    </div>
+
+    <footer>
+      <div class="card-footer text-body-secondary justify-content-center d-flex align-items-center py-3 ">
+        @ Personal Budget 2023
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"crossorigin="anonymous"></script>
+</body>
+</html>
