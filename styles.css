@@ -115,12 +115,14 @@
 
 .table-main {
   width: 100%;
+  height: 100%;
   max-width: 480px;
-  max-height: 300px;
+  max-height: 350px;
+  min-height: 200px;
   display: inline-block;
-  padding-left: 1rem;
+  padding-left: 0;
   overflow-x: auto;
-  border-spacing: 0;
+  border-spacing: 10px;
 }
 
 #comparison-inc {
@@ -130,6 +132,7 @@
   font-size: 12px;
   padding-top: 1rem;
   justify-content: center;
+  min-height: 500px;
 }
 
 #comparison-exp {
@@ -202,6 +205,13 @@ nav{
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.sum {
+  display: flex;
+  font-size: 20px;
+  text-align: center;
+  flex-direction:row;
 }
 
 footer {
