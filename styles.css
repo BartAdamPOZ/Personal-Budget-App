@@ -32,12 +32,12 @@
 .con-add-income {
   display: grid;
   height: 100vh;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 0.25fr 2fr 0.2fr;
   grid-template-areas: 
-  "nav"
-  "income-main"
-  "footer";
+  "nav nav"
+  "income-main comparison-inc"
+  "footer footer";
   grid-gap: 1rem;
   font-family: 'DM Serif Display', serif;
   padding-bottom: 1rem;
