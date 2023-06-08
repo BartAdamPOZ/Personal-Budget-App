@@ -115,7 +115,7 @@
 
 .table-main {
   width: 100%;
-  table-layout: fixed;
+  table-layout: fixe;
   overflow: scroll;
 }
 
@@ -308,10 +308,11 @@ footer {
 
   .con-add-income {
     grid-template-columns: 1fr;
-    grid-template-rows: 0.15fr 2fr 0.15fr;
+    grid-template-rows: 0.15fr 1fr 1fr 0.15fr;
     grid-template-areas: 
     "nav"
     "income-main"
+    "comparison-inc"
     "footer";
     padding-bottom: 1rem;
   }
