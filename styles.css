@@ -127,6 +127,7 @@
   padding-bottom: 1rem;
   align-items: center;
   flex-direction: column;
+  position: relative;
 }
 
 #comparison-exp {
@@ -349,7 +350,6 @@ footer {
 @media only screen and (max-width: 768px) {
   .container {
     padding-bottom: 1rem;
-    scale: 0.75;
     min-width: 300px;
   }
 
@@ -363,10 +363,6 @@ footer {
 
   .form-check {
     padding-left: 5rem;
-  }
-
-  nav {
-    margin-top: -60px;
   }
   
   #img-wave {
