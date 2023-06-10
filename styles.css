@@ -125,6 +125,7 @@
   grid-area: comparison-inc;
   font-size: 12px;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
   position: relative;
 }
@@ -135,6 +136,7 @@
   grid-area: comparison-exp;
   font-size: 12px;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
   position: relative;
 }
@@ -452,6 +454,20 @@ footer {
   font-family: 'DM Serif Display', serif;
   padding-bottom: 1rem;
 }
+
+  #comparison-inc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0 2rem 0;
+  }
+
+  #comparison-exp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0 2rem 0;
+  }
 
   #add-income-main-content {
     padding-bottom: 1rem;
