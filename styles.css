@@ -166,6 +166,12 @@ nav{
   padding-top: 10px;
 }
 
+.navbar-brand {
+  display: inline-flex;
+  align-items: center;
+  
+}
+
 #sign-in-up {
   background-color: #F3F5F7;
   grid-area: sign-in-up;
