@@ -47,12 +47,12 @@
 .con-add-expense {
   display: grid;
   height: 100vh;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 0.25fr 2fr 0.2fr;
   grid-template-areas: 
-  "nav"
-  "expense-main"
-  "footer";
+  "nav nav"
+  "expense-main comparison-exp"
+  "footer footer";
   grid-gap: 1rem;
   font-family: 'DM Serif Display', serif;
   padding-bottom: 1rem;
@@ -124,7 +124,6 @@
   background-color: #F3F5F7;
   grid-area: comparison-inc;
   font-size: 12px;
-  padding-bottom: 1rem;
   align-items: center;
   flex-direction: column;
   position: relative;
@@ -135,8 +134,9 @@
   background-color: #F3F5F7;
   grid-area: comparison-exp;
   font-size: 12px;
-  padding-top: 1rem;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
 }
 
 #balance {
@@ -255,7 +255,6 @@ footer {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-bottom: 1rem;
 }
 
 #add-expense-main-content {
@@ -265,7 +264,6 @@ footer {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-bottom: 1rem;
 }
 
 #balance {
@@ -325,15 +323,22 @@ footer {
 
   .con-add-expense {
     grid-template-columns: 1fr;
-    grid-template-rows: 0.15fr 2fr 0.15fr;
+    grid-template-rows: 0.15fr 1fr 1fr 0.15fr;
     grid-template-areas: 
     "nav"
     "expense-main"
+    "comparison-exp"
     "footer";
     padding-bottom: 1rem;
   }
 
-  
+  #add-income-main-content {
+    padding-bottom: 1rem;
+  }
+
+  #add-expense-main-content {
+    padding-bottom: 1rem;
+  }
 
   #sign-in-up {
     padding: 10%;
@@ -375,10 +380,11 @@ footer {
 
   #add-income-main-content {
     align-items: center;
+    padding-bottom: 1rem;
   }
 
-  .add-expense-main-content {
-    padding-bottom: 20px;
+  #add-expense-main-content {
+    padding-bottom: 1rem;
   }
 
   #comparison-inc {
@@ -386,6 +392,11 @@ footer {
     font-size: 10px;
     justify-content: center;
     align-items:center;
+  }
+
+  #comparison-exp {
+    font-size: 10px;
+    
   }
   
   #img-wave {
