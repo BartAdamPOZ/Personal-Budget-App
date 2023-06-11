@@ -67,8 +67,8 @@
   grid-template-areas: 
   "nav nav nav"
   "select-period select-period select-period"
-  "inc-top3 comparison-inc comparison-exp"
-  "exp-top3 comparison-inc comparison-exp"
+  "inc-top3 pie-chart-inc pie-chart-exp"
+  "exp-top3 pie-chart-inc pie-chart-exp"
   "exp-top3 balance balance"
   "footer footer footer"
   ;
@@ -109,6 +109,7 @@
   align-items: center;
   flex-direction: column;
   text-align: center;
+  padding-top: 1rem;
   justify-content: space-evenly;
   font-size: 12px;
 }
@@ -119,13 +120,35 @@
   overflow: scroll;
 }
 
+#pie-chart-inc {
+  display:flex;
+  background-color: #F3F5F7;
+  grid-area: pie-chart-inc;
+  font-size: 12px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+#pie-chart-exp {
+  display: flex;
+  background-color: #F3F5F7;
+  grid-area: pie-chart-exp;
+  font-size: 12px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
 #comparison-inc {
   display: flex;
   background-color: #F3F5F7;
   grid-area: comparison-inc;
   font-size: 12px;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
   position: relative;
 }
@@ -136,7 +159,7 @@
   grid-area: comparison-exp;
   font-size: 12px;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
   position: relative;
 }
@@ -445,7 +468,7 @@ footer {
   grid-template-areas: 
   "nav nav"
   "select-period select-period"
-  "comparison-inc comparison-exp"
+  "pie-chart-inc pie-chart-exp"
   "inc-top3 exp-top3"
   "balance balance"
   "footer footer "
@@ -455,18 +478,12 @@ footer {
   padding-bottom: 1rem;
 }
 
-  #comparison-inc {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 4rem 0 2rem 0;
-  }
+
 
   #comparison-exp {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 4rem 0 2rem 0;
   }
 
   #add-income-main-content {
@@ -527,18 +544,29 @@ footer {
   #comparison-inc {
     display: flex;
     font-size: 10px;
+  
+  }
+
+  #pie-chart-inc {
+    display: flex;
+    font-size: 10px;
     justify-content: center;
     align-items:center;
     padding: 4rem 0 2rem 0;
   }
 
-  #comparison-exp {
+  #pie-chart-exp {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 10px;
-    padding: 4rem 0 2rem 0;
-    position: relative;
+  }
+
+  #comparison-exp {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 10px;
   }
   
   #img-wave {
@@ -581,8 +609,8 @@ footer {
     grid-template-areas: 
     "nav"
     "select-period"
-    "comparison-inc"
-    "comparison-exp"
+    "pie-chart-inc"
+    "pie-chart-exp"
     "inc-top3"
     "exp-top3"
     "balance"
