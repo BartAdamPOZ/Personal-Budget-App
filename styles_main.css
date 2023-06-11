@@ -171,6 +171,14 @@ main{
     align-items:center;
   }
   
+  .navbar-brand {
+    font-size: 16px;
+  }
+  
+  .logo {
+    width: 31px;
+    height: 24px;
+  }
 
   .card:hover {
     transform: translateY(-5px) scale(1.05) translateZ(0);
@@ -202,7 +210,7 @@ main{
   }
   main {
     flex-direction:column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
   }
 
