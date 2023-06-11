@@ -12,6 +12,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300&family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
 
+     <!-- web font -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" rel="stylesheet">
+
   <link rel="stylesheet" href="styles.css">
 
   <link rel="icon" href="./images/Logo_small-transparent.png">
@@ -54,8 +57,8 @@
     </nav>
 
     <div id="add-expense-main-content" class="container-fluid">
-      <div class="row py-4">
-        <h3> Expense</h3>
+      <div class="row pt-3">
+        <h3>Add new Expense</h3>
       </div> 
       <div class="col">
         <div class="input-group">
@@ -100,9 +103,160 @@
         </div>
       </div>
       <div class="col" style="text-align: center;">
-        <button type="button" class="btn btn-dark">Add expense</button>
+        <button type="button" class="btn btn-dark btn-sm">Add expense</button>
       </div>
       </div>
+    </div>
+
+    <div id="comparison-exp" class="container-fluid">
+      <div class="col-lg-12 pt-3">
+        <div class="col-lg-12 d-flex justify-content-center">
+          <h3>Review</h3>
+        </div>
+        <div class="dropstart" style="position:absolute; right: 2rem; top: 1rem ">
+          <button type="button" class="btn btn-dark btn-sm dropdown-toggle mx-3" data-bs-toggle="dropdown" aria-expanded="false">
+            Sort
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Category A-Z</a></li>
+            <li><a class="dropdown-item" href="#">Date</a></li>
+            <li><a class="dropdown-item" href="#">Amount</a></li>
+          </ul>
+        </div>
+        
+      </div>
+      <div class="col-lg-12">
+        <table class="table table-main">
+          <thead>
+            <tr>
+              <th scope="col">Name</th>
+              <th scope="col">Category</th>
+              <th scope="col">Date</th>
+              <th scope="col">Amount[PLN]</th>
+              <th scope="col">Edit</th>
+              <th scope="col">Delete</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>ON</td>
+              <td>Transportation</td>
+              <td>2023-06-04</td>
+              <td>280.65</td>
+              <td>
+                <button type="button" class="btn btn-dark btn-sm" >
+                  <i class="bi bi-pencil"></i>
+              </button></td>
+              <td>
+                <button type="button" class="btn btn-dark btn-sm" >
+                  <i class="bi bi-x"></i>
+              </button></td>
+            </tr>
+            <tr>
+              <td>Medicines</td>
+              <td>Healthcare</td>
+              <td>2023-06-04</td>
+              <td>111.80</td>
+              <td>
+                <button type="button" class="btn btn-dark btn-sm">
+                  <i class="bi bi-pencil"></i>
+              </button></td>
+              <td>
+                <button type="button" class="btn btn-dark btn-sm" >
+                  <i class="bi bi-x"></i>
+              </button></td>
+              
+            </tr>
+            <tr>
+              <td>Grocery</td>
+              <td>Food</td>
+              <td>2023-06-03</td>
+              <td>187.52</td>
+              <td>
+                <button type="button" class="btn btn-dark btn-sm" >
+                  <i class="bi bi-pencil"></i>
+              </button></td>
+              <td>
+                <button type="button" class="btn btn-dark btn-sm" >
+                  <i class="bi bi-x"></i>
+              </button></td>
+            </tr>
+            <tr>
+              <td>Toys</td>
+              <td>Children</td>
+              <td>2023-06-02</td>
+              <td>99.90</td>
+              <td>
+                <button type="button" class="btn btn-dark btn-sm" >
+                  <i class="bi bi-pencil"></i>
+              </button></td>
+              <td>
+                <button type="button" class="btn btn-dark btn-sm" >
+                  <i class="bi bi-x"></i>
+              </button></td>
+            </tr>
+            <tr>
+              <td>Cinema 3D</td>
+              <td>Entertainment</td>
+              <td>2023-06-01</td>
+              <td>64.39</td>
+              <td>
+                <button type="button" class="btn btn-dark btn-sm" >
+                  <i class="bi bi-pencil"></i>
+              </button></td>
+              <td>
+                <button type="button" class="btn btn-dark btn-sm" >
+                  <i class="bi bi-x"></i>
+              </button></td>
+            </tr>
+            <tr>
+              <td>Workout</td>
+              <td>Training</td>
+              <td>2023-06-01</td>
+              <td>35.00</td>
+              <td>
+                <button type="button" class="btn btn-dark btn-sm" >
+                  <i class="bi bi-pencil"></i>
+              </button></td>
+              <td>
+                <button type="button" class="btn btn-dark btn-sm" >
+                  <i class="bi bi-x"></i>
+              </button></td>
+            </tr>
+            <tr>
+              <td>Thunderbird</td>
+              <td>Donation</td>
+              <td>2023-06-01</td>
+              <td>50.00</td>
+              <td>
+                <button type="button" class="btn btn-dark btn-sm" >
+                  <i class="bi bi-pencil"></i>
+              </button></td>
+              <td>
+                <button type="button" class="btn btn-dark btn-sm" >
+                  <i class="bi bi-x"></i>
+              </button></td>
+            </tr>
+            <tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-lg-12 d-flex justify-content-center">
+          <ul class="pagination pagination-sm">
+            <li class="page-item">
+              <a class="bg-white text-dark page-link">Previous</a>
+            </li>
+            <li class="page-item"><a class="bg-white text-dark page-link" href="#">1</a></li>
+            <li class="page-item active " aria-current="page">
+              <a class="bg-white text-dark page-link" href="#">2</a>
+            </li>
+            <a class="bg-white text-dark page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="bg-white text-dark page-link" href="#">Next</a>
+            </li>
+          </ul>
+      </div>
+      
     </div>
 
     <footer>
